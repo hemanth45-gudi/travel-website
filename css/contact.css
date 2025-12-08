@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Nunito',sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+header {
+    background-color: #1f3b4090; 
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+}
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 6%;
+}
+header .navbar a{
+    text-align: center;
+    align-items: center;
+}
+.navbar a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    margin-right: 7%;
+}
+.icons i {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.search-bar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+.search-bar.active {
+    display: block;
+}
+.search-bar input {
+    width: 200px;
+    border: none;
+    outline: none;
+}
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("https://wallpaperswide.com/download/best_destinations_in_the_world-wallpaper-2048x1152.jpg");
+    background-size: cover;
+}
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+    margin-top: 40px;
+}
+.contact .content h2 {
+    font-size: 42px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 5%;
+}
+.contact .content p {
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 1%;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.container .contactInfo {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+.container .contactInfo .box {
+    position: relative;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+}
+.container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #131e26;
+}
+.container .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3 {
+    font-weight: 1000;
+    font-size: x-large;
+    color: #131e26;
+}
+.container .contactInfo .box .text p {
+    font-weight: 600;
+}
+.contactForm {
+    width: 45%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"] {
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media (max-width: 991px) {
+    .contact {
+        padding: 50px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .contactInfo,
+    .contactForm {
+        width: 100%;
+        max-width: 500px;
+        margin-left: 0; 
+    }
+}

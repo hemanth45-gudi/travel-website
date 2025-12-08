@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body style="background-image: url(images/6.jpeg);">
+    
+    <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <a href="#" class="logo"> <span>T</span>ravel</a>
+      <nav class="navbar">
+           <a href="index.html">HOME</a>
+           <a href="book.html">DESTINATIONS</a>
+           <a href="login.html">LOGIN</a>
+           <a href="contact.html">CONTACT</a>
+      </nav>
+ 
+      <div class="icons">
+           <i class="fas fa-search" id="search-btn"></i>
+           <i class="fas fa-user" id="login-btn"></i>
+      </div>
+ 
+      <form action="" class="search-bar">
+           <input type="search" id="search-bar" placeholder="Search Here....">
+           <label for="search-bar" class="fas fa-search"></label>
+      </form>
+ </header>
+
+    <div class="main-content">
+        
+        <div class="welcome-message">
+            <h2>Welcome to Our Website</h2>
+            <p>We are excited to have you here. Explore our features and join our community to experience the best of travel planning and booking. Our platform offers you the easiest way to plan your next adventure. Don't wait, sign up now and start your journey with us!</p>
+        </div>
+
+       
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form id="signUpForm">
+                    <h1>Create Account</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your email for registration</span>
+                    <input type="text" id="use" placeholder="Name" />
+                    <input type="email" id="email" placeholder="Email" />
+                    <input type="password" id="pass1" placeholder="Password" />
+                    <input type="password" id="pass2" placeholder="Confirm Password" />
+                    <button type="submit">Sign Up</button>
+                    <p class="error hidden">Passwords do not match!</p>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form id="signInForm">
+                    <h1>Sign in</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your account</span>
+                    <input type="text" id="username" placeholder="Username" />
+                    <input type="password" id="password" placeholder="Password" />
+                    <a href="#">Forgot your password?</a>
+                    <button type="submit">Sign In</button>
+                    <p class="error1 hidden">Invalid username or password!</p>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected with us please login with your personal info</p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, User!</h1>
+                        <p>Enter your personal details and start your journey with us</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/login.js"></script>
+</body>
+</html>

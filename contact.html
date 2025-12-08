@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"> <span>T</span>ravel</a>
+        <nav class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="book.html">DESTINATIONS</a>
+            <a href="login.html">LOGIN</a>
+          <a href="contact.html">CONTACT</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar">
+            <input type="search" id="search-bar" placeholder="Search Here....">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>"Have questions about your next destination?"<br> "We're here to help! Contact us to start planning your perfect getaway"</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Amritanagar PO,<br>Amrita Vishwa Vidyapeetham,<br>Coimbatore,<br>641112.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>103-546-7869</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>traveltourism@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Message Us</h2>
+                    <div class="inputBox">
+                        <input type="text" name=""  maxlength="12" required>
+                        <span>Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="" required>
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        
+        let searchBtn = document.querySelector('#search-btn');
+        let searchBar = document.querySelector('.search-bar');
+        searchBtn.onclick = () => {
+            searchBar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

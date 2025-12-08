@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="css/booknow.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body style="background-image:url(images/1.jpg);">
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"> <span>T</span>ravel</a>
+        <nav class="navbar">
+             <a href="index.html">HOME</a>
+             <a href="book.html">DESTINATIONS</a>
+             <a href="login.html">LOGIN</a>
+             <a href="contact.html">CONTACT</a>
+        </nav>
+   
+        <div class="icons">
+             <i class="fas fa-search" id="search-btn"></i>
+             <i class="fas fa-user" id="login-btn"></i>
+        </div>
+   
+        <form action="" class="search-bar">
+             <input type="search" id="search-bar" placeholder="Search Here....">
+             <label for="search-bar" class="fas fa-search"></label>
+        </form>
+   </header>
+    <div class="paymentbox">
+        <h2>SCAN THIS IMAGE </h2>
+        <img src="images/bar.jpg">
+    
+        <h3>SCAN THIS TO MAKE PAYMENT</h3>
+        <h3>DETAILS WILL BE AUTOMATICALLY SENT TO YOUR MAIL</h3>
+    </div>
+    <script>
+        let searchBtn=document.querySelector('#search-btn');
+        let searchBar=document.querySelector('.search-bar');
+        let menu=document.querySelector('#menu-bar');
+        let navbar=document.querySelector('.navbar');
+        let videoBtn=document.querySelectorAll('.vid-btn');
+
+        window.onscroll = () =>{
+            searchBtn.classList.remove('fa-times');
+            searchBar.classList.remove('active');
+
+        }
+        menu.addEventListener('click', () =>{
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        });
+
+        searchBtn.addEventListener('click', () =>{
+            searchBtn.classList.toggle('fa-times');
+            searchBar.classList.toggle('active');
+        });
+
+        videoBtn.forEach(btn =>{
+            btn.addEventListener('click', () =>{
+            document.querySelector('.controls .active').classList.remove('active');
+            btn.classList.add('active');
+            let src=btn.getAttribute('data-src');
+            document.querySelector('#video-slider').src=src;
+            
+            });
+        });
+    </script>
+</body>
+</html>
