@@ -1,48 +1,46 @@
 # 🌍 Travel Booking Website
 
-## Project Overview
+## 📌 Project Overview
 
 This project is a responsive front-end travel booking website designed to provide users with an interactive and visually appealing experience for exploring travel destinations. The website includes multiple pages such as home, destinations, login/sign-up, payment, and contact.
 
-It is built using HTML, CSS, and JavaScript, focusing on modern UI design, smooth navigation, and responsive layouts. The project demonstrates front-end development concepts such as animations, responsive design, and user interface interactions.
-
-This project is suitable for learning web design fundamentals and building attractive user interfaces for travel-related platforms.
+It is built using HTML, CSS, and JavaScript with a focus on modern UI design, smooth navigation, and responsive layouts.
 
 ---
 
-## Objective
+## 🎯 Objective
 
 * To design a responsive travel website interface.
-* To provide an interactive user experience with modern UI components.
-* To implement navigation across multiple pages.
-* To demonstrate front-end development using HTML, CSS, and JavaScript.
+* To provide an interactive and user-friendly experience.
+* To implement multi-page navigation.
+* To demonstrate front-end development skills.
 
 ---
 
-## Features
+## ⭐ Features
 
 ### 🎥 Landing Page
 
 * Fullscreen travel video background.
-* Hero section with modern UI design.
-* Attractive navigation bar with search feature.
+* Hero section with modern UI.
+* Navigation bar with search feature.
 
 ### 🌎 Destinations Page
 
 * Interactive destinations carousel.
 * Travel cards for popular locations.
-* "See More" and "Book Now" action buttons.
+* "See More" and "Book Now" buttons.
 
 ### 🔐 Login / Sign Up Page
 
-* Modern overlay-based authentication UI.
+* Modern overlay authentication UI.
 * Login and registration forms.
-* Social media icons for UI enhancement.
+* Social media icons.
 
 ### 💳 Payment Page
 
 * Simple payment interface.
-* QR code scan section for booking confirmation.
+* QR scan section for booking confirmation.
 
 ### 📞 Contact Page
 
@@ -53,41 +51,41 @@ This project is suitable for learning web design fundamentals and building attra
 
 * Mobile-friendly layout.
 * Responsive navigation menu.
-* Smooth UI animations and transitions.
+* Smooth animations and transitions.
 
 ---
 
-## Pages Included
+## 📄 Pages Included
 
-* **index.html** – Home page with video background and hero section
-* **book.html** – Destinations slider with travel cards (Singapore, Bali, China, Europe, America, Kerala)
-* **login.html** – Login and registration page
-* **booknow.html** – Payment and QR scan page
-* **contact.html** – Contact form and details
+* **index.html** → Home page (video background + hero section)
+* **book.html** → Destinations slider (Singapore, Bali, China, Europe, America, Kerala)
+* **login.html** → Login and registration form
+* **booknow.html** → Payment / QR scan page
+* **contact.html** → Contact form and details
 
 ---
 
-## Technologies Used
+## ⚙️ Technologies Used
 
 * HTML5
 * CSS3 (custom layouts, animations, responsive design)
-* JavaScript (navbar toggle, video slider, interactions)
+* JavaScript (navbar toggle, interactions)
 * Font Awesome icons
 
 ---
 
-## How to Run the Project
+## ▶️ How to Run the Project
 
 1. Clone or download the repository.
 2. Open the project folder.
-3. Open `index.html` in your web browser.
-4. Navigate between pages using the navigation bar.
+3. Open `index.html` in your browser.
+4. Navigate between pages using the navbar.
 
-No backend or database is required for this version.
+No backend or database is required.
 
 ---
 
-## Applications
+## 🌍 Applications
 
 * Travel booking platforms
 * Tourism websites
@@ -96,6 +94,6 @@ No backend or database is required for this version.
 
 ---
 
-## Author
+## 👨‍💻 Author
 
 **Hemanth Gudi**
